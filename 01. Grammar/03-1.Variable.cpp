@@ -11,6 +11,8 @@ void main()
 	1gb   = 1024mb
 	1tb   = 1024gb
 
+	8byte = 64bit
+
 	자료형 - 데이터를 표현하는 형태
 
 	1byte 8bit

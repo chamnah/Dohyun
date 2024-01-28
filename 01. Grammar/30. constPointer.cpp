@@ -31,5 +31,29 @@ int main()
 	*ptr = 10; // 값 변경 가능
 	ptr = &b; // 포인터가 가리키는 주소 변경 불가능 
 
+	
+	
+	// 1번
+	char temp[6] = "abcde";
+	char* pTemp1;
+	// d의 값을 j로 바꾸기
+	//2번
+	void* pTemp2;
+	// b의 값을 e로 바꾸기
+
+	int* ptrTemp = NULL;
+	*ptrTemp = 10;
+	ptrTemp + 1;
+
+	void* ptrTemp2;
+;
+	*ptrTemp2;
+	*static_cast<int*>(ptrTemp2) = 20
+
+	int arrInt[8] = { 5,8,9,10,4,3,7,1 };
+	void* ptrVoid;
+	// 3의 값을 45로 변경
+
+
 	return 0;
 }
