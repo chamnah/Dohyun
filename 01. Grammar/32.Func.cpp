@@ -79,7 +79,7 @@ int main()
 
 	  char 배열 / char*
 	*/
-
+	/*
 	char value = 'a';
 	func(value); // 값을 d로 변경
 	cout << value;//값 d를 출력
@@ -115,12 +115,21 @@ int main()
 	- 문자열 인자 두개를 받는다.
 	- 문자열 두개가 서로 같으면 true 반환 다르면 false 반환 / bool
 
-	*/
+	abceefg
+	abcdefh
 
+	bool k = a == b;
+	return k;
+
+
+	return a == b;
+
+	*/
+	/*
 	int a[10] = {};
 	for (int i = 0; i < 10; i++)
 	{
 		a[i] = i + 1;
 	}
-
+	*/
 }
