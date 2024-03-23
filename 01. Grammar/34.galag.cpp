@@ -9,6 +9,7 @@ struct Object
 {
 	int iPosX, iPosY;  // 좌표
 	char arrImage[10]; // 플레이어 모습
+	int size;          // 플레이어 크기
 };
 
 char board[BOARD_Y][BOARD_X] = {};//플레이어 적 총알
@@ -75,12 +76,6 @@ int main()
 
 		// 입력
 		// cout cin
-		for (size_t i = 0; i < 5; i++)
-		{
-			board[player.iPosY][player.iPosX + i] = player.arrImage[i];
-			board[monster.iPosY][monster.iPosX + i] = monster.arrImage[i];
-		}
-		
 
 		if (_kbhit() != 0)
 		{
@@ -90,9 +85,51 @@ int main()
 			case 'w':
 				player.iPosY -= 1;
 				break;
+			case 'S':
+			case 's':
+				player.iPosY += 1;
+				break;
+			case 'A':
+			case 'a':
+				player.iPosX -= 1;
+				break;
+			case 'D':
+			case 'd':
+				player.iPosX += 1;
+				break;
 			default:
 				break;
 			}
+		}
+
+		int playerImageLength = strlen(player.arrImage);// 문자열 길이
+
+		if (player.iPosX < 0) // x < 0 왼쪽 점점 감소
+		{
+			player.iPosX = 0;
+		}
+		else if (player.iPosY < 0)
+		{
+			player.iPosY = 0;
+		}
+		else if (player.iPosY > BOARD_Y - 1)
+		{
+			player.iPosY = BOARD_Y - 1;
+		}
+		else if (player.iPosX > BOARD_X - playerImageLength)
+		{
+			player.iPosX = BOARD_X - playerImageLength;
+		}
+		//오른쪽 점점 증가 
+		
+		for (size_t i = 0; i < 5; i++)
+		{
+			board[player.iPosY][player.iPosX + i] = player.arrImage[i];
+		}
+		
+		for (size_t i = 0; i < 5; i++)
+		{
+			board[monster.iPosY][monster.iPosX + i] = monster.arrImage[i];
 		}
 		
 		for (size_t i = 0; i < BOARD_Y; i++)
@@ -119,6 +156,26 @@ int main()
 }
 
 /*
+03/23 숙제
+1. Object 구조체에 size 변수를 추가하기
+  - 플레이어 사이즈 값 넣기 *strlen 활용 
+  - 몬스터 사이즈 값 넣기 *strlen 활용
+
+2. while문 안에 코드들 함수화하기(복습)
+  - 입력 코드 함수화 하기
+  - board에 플레이어와 몬스터 넣는 코드 함수화 하기
+  - board 출력하는 코드 함수화하기
+
+3. 총알 생성
+  - 스페이스 바를 누르면 총알 생성 
+  - 플레이어 한칸 위에 생성
+  - 동적 할당 이용하기 / new / delete
+
+금기 사항
+- 숙제가 여러개인 경우 할 수 있는 숙제라도 최대한 해오기
+  3번 숙제 막힘 / 1번이나 2번
+- 해온 과정 지우지 말고 가져오기
+
 03/19 숙제
 1. 상/하/좌/우 모두 움직이도록 만들기
 2. 플레이어가 화면 밖으로 나가지 않도록 막기
