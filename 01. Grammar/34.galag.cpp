@@ -252,4 +252,7 @@ Object 변수 선언
 int a = 함수
 */
 
-
+void SetObject(Object* pA, int posX)
+{
+	pA->iPosX = posX;
+}
