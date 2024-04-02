@@ -140,21 +140,10 @@ void ClearBoard()
 
 int main()
 {
-	Object airport;
-	airport.iPosX = 15;
-	airport.iPosY = 15;
-	strcpy(airport.arrImage, "<0>");
-	airport.size = strlen(airport.arrImage); // 값 넣음 
-	// strlen : 문자 갯수
-
-
-
 	SetOption();
 
 	Object player;
 	SetObject(&player, 15, 15, "<-0->");
-
-
 
 	Object monster;
 	SetObject(&monster, 15, 10, "<0-0>");
@@ -179,6 +168,16 @@ int main()
 	
 	return 0;
 }
+
+/*
+04/02 숙제
+1. SetArrImage(Object* pObj){} 형태로 만들기
+  1. 인자 하나만 받아서 플레이어/총알/몬스터 각각 호출하도록 변경
+
+2. 플레이어가 스페이스바를 누르면, 총알의 위치를 플레이어 주변으로 변경하기
+
+
+*/
 
 /*
 03/26 숙제
@@ -252,7 +251,22 @@ Object 변수 선언
 int a = 함수
 */
 
-void SetObject(Object* pA, int posX)
-{
-	pA->iPosX = posX;
-}
+//void SetObject(Object* pA, int posX)
+//{
+//	pA->iPosX = posX;
+//}
+
+/*
+고양이 구조체만들기
+
+1. 고양이 구조체
+	1. 고양이 이름
+	2. 고양이 키
+	3. 고양이 몸무게
+	4. 고양이 성별
+	5. 고양이 종류이름
+
+2. 고양이 구조체에 값을 세팅하는 함수 만들기
+3. 고양이 구조체 출력하기
+
+*/
