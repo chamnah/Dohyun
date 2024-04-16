@@ -17,19 +17,59 @@ int main()
 	예시 2 3 2 입력 => 3 2 출력
 	*/
 
-	int storage[10] = {};
-	int count = 0;
-	cin >> count;
-	for (size_t i = 0; i < count; i++)
-	{
-		int input = 0;
-		cin >> input;
-	}
+	//vector<int> vec(10);
+	////int storage[10] = {};
+	//int n = 0;
+	//cin >> n;
+	
+
+	
 
 	// 3 1 2 3
 	// storage[0] = 1
 	// storage[1] = 2
 	// storage[2] = 3
+
+	vector<int> v;
+	
+	for (size_t i = 0; i < 20; i++)
+	{
+		v.push_back(i); // 20번 v의 크기 20개
+	}
+	
+	vector<int> v2;
+	for (size_t i = 0; i < 10; i++)
+	{
+		v2.push_back(i);
+	}
+
+	vector<vector<int>> vList;
+	vList.push_back(v); // 0 v
+	vList.push_back(v2);// 1 v2
+
+	/*
+	0 - v { 0 ~ 19 } 20 개 짜리
+	1 - v2 {0 ~ 9}   10 개 짜리
+	*/
+	vList[0][19] = 20;
+	vList[1][9] = 20;
+	vector<int> tempList;
+	
+	for (size_t i = 0; i < 3; i++)
+	{
+		tempList.push_back(i);
+	}
+	
+	/*
+	04/16 숙제
+	2차원 vector 만든 후 push_back 이용해서 아래와 같이 값 넣기
+	*/
+	vector<vector<int>> arrInt;
+	
+	//arrInt[0] - 5,9,6,4,3
+	//arrInt[1] - 6,4,3
+	//arrInt[2] - 77,88,33
+	//arrInt[3] - 71,81,38,100
 	return 0;
 }
 /*
@@ -47,7 +87,41 @@ int main()
 입력한 횟수만큼 숫자 입력하고
 입력한 숫자들 배열에 넣기
 
+문제 4
+입력한 횟수만큼 숫자 입력하고
+입력한 숫자들 vector에 넣기
+
+문제 5
+3 A : {1 2 3} B : {4 5 6}
+입력한 횟수만큼 숫자 입력하고
+입력한 숫자들 vectorA에 넣기
+
+위에서 입력한 횟수만큼 숫자 입력하고
+입력한 숫자들 vectorB에 넣기
+
+문제 6
+A B 두 배열에 저장된 숫자가 다른 횟수를 출력
+3 1 2 3 1 2 5 : 1회
+
+문제 7
+입력한 숫자만큼의 사각형 이차원 배열을 저장하시오.
+그리고, 2차원 배열에 저장된 배열을 출력하시오.
+3
+9의 입력
+1 2 3 i = 0 | j = 0 / j = 1 / j = 2
+4 5 6
+7 8 9
+
+2
+4의 입력
+1 2
+3 4
+
+1
+1의 입력
+1
 */
+
 
 /*
 1번. 복습하기
