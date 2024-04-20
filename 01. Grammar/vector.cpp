@@ -64,12 +64,71 @@ int main()
 	04/16 숙제
 	2차원 vector 만든 후 push_back 이용해서 아래와 같이 값 넣기
 	*/
+	vector<int> firstArray;
+	firstArray.push_back(5);
+
 	vector<vector<int>> arrInt;
-	
-	//arrInt[0] - 5,9,6,4,3
-	//arrInt[1] - 6,4,3
+	arrInt.push_back(firstArray); // 0번째에 1차원 배열 넣기
+	//arrInt[0] = 5
+
+	//arrInt[0] - {5,9,6,4,3} = firstArray
+	//arrInt[1] - {6,4,3} = secondArray
 	//arrInt[2] - 77,88,33
 	//arrInt[3] - 71,81,38,100
+	/*
+	59643/643/778833/718138100
+	*/
+
+	/*for (size_t i = 0; i < 5; i++)
+	{
+		for (size_t j = 0; j < 5; j++)
+		{
+			cout << '*';
+		}
+		cout << endl;
+	}*/
+	/*
+	*****
+	*****
+	*****
+	*****
+	*****
+	*/
+	int height;
+	cin >> height;
+	vector<vector<int>> arrA;
+	for (size_t i = 0; i < height; i++)
+	{
+		vector<int> arrLine;
+		
+		//i= 0 | j < 1 == i + 1
+		//i= 1 | j < 2 == i + 1
+		//i= 2 | j < 3 == i + 1
+		for (size_t j = 0; j < i + 1; j++)
+		{
+			int value;
+			cin >> value;
+			arrLine.push_back(value);
+		}
+
+		arrA.push_back(arrLine);
+	}
+
+	//arrA[0] - {0} i = 0 / j = 0
+	//arrA[1] - {1,0} i = 1 / j = 0 / j = 1
+	//arrA[2] - {1,0,0} i = 2 / j = 0 / j = 1 / j = 2
+
+	//arrB[0] - {0}
+	//arrB[1] - {0,0}
+	//arrB[2] - {0,0,1}
+
+	/*
+	두 삼각형 비교해서 다른 부분 갯수를 출력
+	arrA / arrB
+
+	arrA와 arrB를 비교해서 다른 부분 갯수를 cout으로 출력하기
+	*/
+	
 	return 0;
 }
 /*
