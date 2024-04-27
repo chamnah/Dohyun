@@ -129,6 +129,20 @@ int main()
 	arrA와 arrB를 비교해서 다른 부분 갯수를 cout으로 출력하기
 	*/
 	
+	vector<int> arrTemp;
+	arrTemp.push_back(10);
+	arrTemp.push_back(20);
+	arrTemp.push_back(30);
+	//height
+	for (size_t i = 0; i < length; i++)
+	{
+		arrTemp[i];
+	}
+
+	cout << arrA[0][0] << endl;
+
+	int a[10] = {0,1,2,3};
+	int b[10] = {0,1,2,2};
 	return 0;
 }
 /*
