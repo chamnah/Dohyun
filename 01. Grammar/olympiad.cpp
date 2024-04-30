@@ -93,14 +93,9 @@ int main()
 	
 	return 0;
 }
+
 /*
-숙제
-arrRotationA_2 추가하여 회전한 삼각형 만들기
-
-arrB랑 arrA비교
-arrB랑 arrRotationA비교
-arrB랑 arrRotationA_2 비교
-
-가장 차이값이 낮은 숫자를 출력
+04/30 숙제
+안보고 풀수 있도록 복습
 
 */
