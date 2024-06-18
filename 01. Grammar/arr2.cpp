@@ -84,11 +84,11 @@ int main()
 	*/
 
 
-	int arr[3][3] = {
+	/*int arr[3][3] = {
 		{10,50,90},
 		{1,2},
 		{3,5,14.7}
-	};
+	};*/
 	/*
 	arr[0][0] arr[0][1] arr[0][2] 
 		10		  50		90
@@ -98,14 +98,14 @@ int main()
 		3		5			14
 	
 	*/
-	for (size_t i = 0; i < 3; i++)
+	/*for (size_t i = 0; i < 3; i++)
 	{
 		for (size_t j = 0; j < 3; j++)
 		{
 			cout << arr[i][j] << '\t';
 		}
 		cout << endl;
-	}
+	}*/
 
 	/*
 	int arr[4][4] = {{0,1,2},{3,4,5}};

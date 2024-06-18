@@ -1,6 +1,19 @@
 #include <iostream>
 using namespace std;
 
+void func(int (& arr)[3][3])
+{
+	for (size_t i = 0; i < 3; i++)
+	{
+		for (size_t j = 0; j < 3; j++)
+		{
+			cout << arr[i][j];
+		}
+		cout << endl;
+	}
+	
+}
+
 int main()
 {
 	/*
@@ -10,29 +23,35 @@ int main()
 	*/
 	//const : 상수
 	//int arr[4][4]; // 16
-	int arr[3][3]; // 9
+	//int arr[3][3] = { {1,2,3},{4,5,6},{7,8,9} }; // 9
 
-	int arr[3]; // 3 / 0 1 2
+	//int arr[3] = {4,5,6}; // 3 / 0 1 2
 
-	const int width = 3;
-	const int height = 3;
-	int arr[height][width] = {};//int 9 / 0 1 2 3 4 5 6 7 8 : 9개
-	for (size_t i = 0; i < height; i++)
-	{
-		for (size_t j = 0; j < width; j++)
-		{
-			arr[i][j] = (i * width) + j;//1,2,3,4,5,6,7,8,9
-		}
-	}
+	//func(arr);
 
-	for (size_t i = 0; i < height; i++)
-	{
-		for (size_t j = 0; j < width; j++)
-		{
-			cout << arr[i][j];
-		}
-		cout << endl;
-	}
+	//const int width = 3;
+	//const int height = 3;
+	//int arr[height][width] = {};//int 9 / 0 1 2 3 4 5 6 7 8 : 9개
+	//for (size_t i = 0; i < height; i++)
+	//{
+	//	for (size_t j = 0; j < width; j++)
+	//	{
+	//		arr[i][j] = (i * width) + j;//1,2,3,4,5,6,7,8,9
+	//	}
+	//}
+
+	//for (size_t i = 0; i < height; i++)
+	//{
+	//	for (size_t j = 0; j < width; j++)
+	//	{
+	//		cout << arr[i][j];
+	//	}
+	//	cout << endl;
+	//}
+
+	int arr[3][3];
+
+	func(arr);// 1 ~ 9까지 채우고, 화면에 출력하기
 
 	return 0;
 }
@@ -49,8 +68,18 @@ int arr[4][3]; // 12
 
 1. 7의 배수 채우기
    ex) 7 ~ 84(7*12)
-2. 4부터 시작해서 11까지 채우기
-   ex) 4 ~ 16
+2. 4부터 시작해서 15까지 채우기
+   ex) 4 ~ 15
 3. 12,15,18,21,24,27,30,33,36,39,42,45까지 채우기
    ex) 규칙을 스스로 찾고 이중 포문을 이용하여 출력하기
+*/
+
+/*
+숙제
+복습~~!!!!
+
+다음시간에, 안보고 치기
+1. 배수 채워서 출력
+2. 특정 숫자부터 시작해서 채우기
+3. 특정 숫자부터 배수로 채우기
 */
