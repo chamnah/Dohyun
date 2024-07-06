@@ -57,7 +57,7 @@ int main()
 
 	cout << maxValue;
 	*/
-	
+	/*
 	int arr[10] = { 1,1,2,2,3,3,3,7,7,10 };
 	int arrCount[10] = {}; // 갯수
 	int arrNum[10] = {};   // 어떤 숫자
@@ -103,7 +103,7 @@ int main()
 		cout << arrNum[i] << ": " << arrCount[i] << endl;
 	}
 	
-
+	*/
 	// 구조체로 표현한 경우.
 /*
 	struct CountInfo
@@ -162,5 +162,117 @@ int main()
 	int findNum = 10;
 	int findCount; -> findNum에 해당하는 Count 찾기 
 	*/
+	//int arr[10] = { 1,1,2,2,3,3,3,7,7,10 };
+	//int findNum; // 찾을 값 (임의 값)
+	//int findCount; // 찾은 숫자의 갯수
+
+	// 탐색 + findCount에 값 채우기
+
+
+	//findCount 값 출력
+
+	/*
+	1. 배열에서 최대값 찾기
+	int arr[10] = { 1,1,2,2,3,3,3,7,7,10 };
+	int maxNum; // 최대값
+
+	// 탐색 + maxNum 값 넣기
+	// maxNum 출력
+
+	2. 배열에서 최소값 찾기
+	int arr[10] = { 1,1,2,2,3,3,3,7,7,10 };
+	int minNum; // 최소값
+
+	// 탐색 + minNum 값 넣기
+	// minNum 출력
+
+	3. 배열에서 같은 값 찾기
+	int arr[10] = { 1,1,2,2,3,3,3,7,7,10 };
+	int sameNum; // 임의의 값
+
+	// 탐색
+
+	//같은 값이 존재한다. / 같은 값이 존재하지 않는다.
+
+	bool check;
+
+	*/
+	/*
+	int arr[10] = { 1,2 };
+	int maxNum = 0; // arr 배열의 최대값
+
+	if (maxNum < arr[0])
+	{
+		maxNum = arr[0];
+	}
+
+	if (maxNum < arr[1])
+	{
+		maxNum = arr[1];
+	}
+
+	if (maxNum < arr[2])
+	{
+		maxNum = arr[2];
+	}
+
+	maxNum; //최대값
+	*/
+                 // x x x x o
+/*
+//1. 값은 값 찾기 bool 활용
+	int arr[10] = { 1,1,2,2,3,3,3,7,7,10 };
+	int sameNum = 3;
+	bool checkSame = false;
+
+	for (size_t i = 0; i < 10; i++)
+	{
+		if (sameNum == arr[i])
+		{
+			checkSame = true;
+			cout << "같은 값이 존재한다." << endl;
+			break;
+		}
+	}
+
+	if (checkSame == false)// 같은 값이 없을 때만 출력해야 함
+	{
+		cout << "같은 값이 존재하지 않는다." << endl; 
+	}
+*/
+/*
+//2. 값은 값 찾기 return 활용
+	int arr[10] = { 1,1,2,2,3,3,3,7,7,10 };
+	int sameNum = 3;
+
+	for (size_t i = 0; i < 10; i++)
+	{
+		if (sameNum == arr[i])
+		{
+			cout << "같은 값이 존재한다." << endl;
+			return 0; // 함수값반환 + 함수 종료
+		}
+	}
+	
+	cout << "같은 값이 존재하지 않는다." << endl;
+*/
+	for (size_t i = 0; i < 10; i++) // 10번
+	{
+		for (size_t j = 0; j < 10; j++) // 10번
+		{
+			cout << "Show" << endl;
+			break; // j 탈출
+		}
+		//break; // i 탈출
+	}
+
+	// break; for문 1개 / switch문 1개 탈출
+	// return : 함수값반환 + 함수 종료
+
+	/*
+	복습~~~~~!!!!!!
+	
+	*/
+
 	return 0;
 }
