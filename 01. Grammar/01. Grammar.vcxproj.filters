@@ -13,189 +13,204 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\old">
+      <UniqueIdentifier>{a6240b9b-92fb-4e72-8f15-5a99e6c32190}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="01. C Project.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="test.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="02. C++ Project.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="03. Notation.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="03-1.Variable.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="04. Operator.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="05. Const.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="05-1 BitOperator.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="06. SplitBit.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="07. splitBitTest.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="08. Increment_Decrement.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="09. if.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="10.rand.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="11.switch.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="11-1 switchUpgrade.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="12. while.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="12-1 doWhile.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="12-2 RockScissorsPaper.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="12-3 enum.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="13. Homework.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="14. for.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="15. fors.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="16. Array.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="17. Star.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="18. Swap.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="19. DoubleArray.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="20. Bingo.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="21. charArray.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="22.struct.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="test1.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="23. pointer.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="24. pointerArr.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="25. casting.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="26.charPonter.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="27.structPointer.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="28.voidPointer.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="29.doublePointer.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="30. constPointer.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="31.dynamicAllocation.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="32.Func.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="33.FuncHomework.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="34.galag.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="triangleTest.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="vector.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="olympiad.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="olympia2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="practice.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="35.functionPractice.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="36.functionPractice2.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="37.reference.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="arr2.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="38.arr2.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="40.arrPractice.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="41. arrPractice3.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="42.selectSort.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="43.InsertSort.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
-    <ClCompile Include="testtest.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="12313.cpp">
+      <Filter>소스 파일\old</Filter>
+    </ClCompile>
+    <ClCompile Include="arr2.cpp">
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="nypc.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClCompile>
     <ClCompile Include="nypcTest.cpp">
+      <Filter>소스 파일\old</Filter>
+    </ClCompile>
+    <ClCompile Include="nypcTest2.cpp">
+      <Filter>소스 파일\old</Filter>
+    </ClCompile>
+    <ClCompile Include="olympia2.cpp">
+      <Filter>소스 파일\old</Filter>
+    </ClCompile>
+    <ClCompile Include="olympiad.cpp">
+      <Filter>소스 파일\old</Filter>
+    </ClCompile>
+    <ClCompile Include="practice.cpp">
+      <Filter>소스 파일\old</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>소스 파일\old</Filter>
+    </ClCompile>
+    <ClCompile Include="test1.cpp">
+      <Filter>소스 파일\old</Filter>
+    </ClCompile>
+    <ClCompile Include="test3.cpp">
+      <Filter>소스 파일\old</Filter>
+    </ClCompile>
+    <ClCompile Include="testtest.cpp">
+      <Filter>소스 파일\old</Filter>
+    </ClCompile>
+    <ClCompile Include="triangleTest.cpp">
+      <Filter>소스 파일\old</Filter>
+    </ClCompile>
+    <ClCompile Include="vector.cpp">
+      <Filter>소스 파일\old</Filter>
+    </ClCompile>
+    <ClCompile Include="newPractice.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="02-1. library.h">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\old</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
