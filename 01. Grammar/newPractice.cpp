@@ -54,6 +54,25 @@ int main()
 	} while (false);
 
 
+	int a = 10;
 	//temp = 10;
+	// int - 4byte
+	/*
+	메모리영역 4가지
+	STACK
+	- 지역 변수 : 괄호 안에 선언된 변수
+
+	HEAP
+	- 동적할당된 메모리 영역 - 사용자 영역
+	
+	DATA
+	- 전역 변수 : 괄호 밖에 선언된 변수 
+	
+	CODE
+	- 코드
+	*/
+
+
+
 	return 0;
 }

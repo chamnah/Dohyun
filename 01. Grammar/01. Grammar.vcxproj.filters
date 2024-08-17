@@ -207,6 +207,9 @@
     <ClCompile Include="newPractice.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="newPractice2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="02-1. library.h">
