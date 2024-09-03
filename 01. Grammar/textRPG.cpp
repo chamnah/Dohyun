@@ -4,7 +4,8 @@ using namespace std;
 
 enum JobType
 {
-	WIZZARD = 1,
+	NONE,
+	WIZZARD,
 	WARRIOR,
 	SOCCER_PLAYER,
 	STUDENT,
@@ -15,12 +16,12 @@ class Player
 {
 private:
 	char m_szName[10];
-	JobType m_eJob;
-	int  m_iLevel;
-	int  m_iPhysicalAttack;
-	int  m_iMagicAttack;
-	int  m_iDefence;
-	int  m_iMoney;
+	JobType m_eJob = JobType::NONE;
+	int  m_iLevel = 0;
+	int  m_iAttack = 0;
+	int  m_iMagicAttack = 0;
+	int  m_iDefence = 0;
+	int  m_iMoney = 0;
 
 public:
 	//Getter/Setter
@@ -34,13 +35,42 @@ public:
 		return m_szName;
 	}
 
+	void SetAttack(int _iAttackPoint)
+	{
+		m_iAttack = _iAttackPoint;
+	}
+
+	void SetJob(JobType _eType)
+	{
+		m_eJob = _eType;
+	}
+
+	const char* GetJobName()
+	{
+		switch (m_eJob)
+		{
+		case WIZZARD:
+			return "마법사";
+		case WARRIOR:
+			return "전사";
+		case SOCCER_PLAYER:
+			return "축구 선수";
+		case STUDENT:
+			return "학생";
+		case LOL_GAMER:
+			return "롤 프로게이머";
+		default:
+			break;
+		}
+	}
+
 	void PrintStatus()
 	{
 		cout << "============== 상태창 ==============" << endl;
 		cout << "이름 : " << m_szName << endl;
 		cout << "레벨 : " << m_iLevel << endl;
-		cout << "직업 : " << m_eJob << endl;
-		cout << "물리 공격력 : " << m_iPhysicalAttack << endl;
+		cout << "직업 : " << GetJobName() << endl;
+		cout << "물리 공격력 : " << m_iAttack << endl;
 		cout << "마법 공격력 : " << m_iMagicAttack << endl;
 		cout << "방어력 : " << m_iDefence << endl;
 		cout << "돈 : " << m_iMoney << endl;
@@ -80,6 +110,8 @@ int main()
 			cout << "마법 공격력 : 10" << endl;
 			cout << "방어력 : 2" << endl;
 			cout << "돈 : 500" << endl;
+			p1.SetAttack(3);
+			p1.SetJob(WIZZARD);
 			break;
 		case WARRIOR:
 			cout << "======= 전사 ======" << endl;
@@ -87,6 +119,7 @@ int main()
 			cout << "마법 공격력 : 2" << endl;
 			cout << "방어력 : 5" << endl;
 			cout << "돈 : 300" << endl;
+			p1.SetJob(WARRIOR);
 			break;
 		case SOCCER_PLAYER:
 			cout << "======= 축구선수 ======" << endl;
@@ -94,6 +127,7 @@ int main()
 			cout << "마법 공격력 : 1" << endl;
 			cout << "방어력 : 7" << endl;
 			cout << "돈 : 10000" << endl;
+			p1.SetJob(SOCCER_PLAYER);
 			break;
 		case STUDENT:
 			cout << "======= 수험생 ======" << endl;
@@ -101,6 +135,7 @@ int main()
 			cout << "마법 공격력 : 3" << endl;
 			cout << "방어력 : 4" << endl;
 			cout << "돈 : 200" << endl;
+			p1.SetJob(STUDENT);
 			break;
 		case LOL_GAMER:
 			cout << "======= 롤 게이머 ======" << endl;
@@ -108,6 +143,7 @@ int main()
 			cout << "마법 공격력 : 10" << endl;
 			cout << "방어력 : 6" << endl;
 			cout << "돈 : 50000" << endl;
+			p1.SetJob(LOL_GAMER);
 			break;
 		default:
 			break;
@@ -127,10 +163,32 @@ int main()
 	}
 	// 능력치 출력하기
 
+	p1.PrintStatus();
+
 	return 0;
 }
 
 /*
 숙제 : 직업 선택 후 능력치 세팅하기
 주의 : private 상태 변경하면 안됨
+*/
+
+/*
+숙제
+1. 직업 선택 후 아래 선택지 띄우기
+  1. 던전
+  2. 여관
+  3. 상점
+  4. 나가기
+
+2. 나가기 구현해보기(게임 종료) 
+
+인재개발원 -> 앱 인벤터 / 앤트리
+
+해본거
+앱 인벤터 : 회원 가입 / 로그인 / QR 생성 / QR 스캔
+
+개발원
+
+
 */
