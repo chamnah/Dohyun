@@ -2,6 +2,23 @@
 
 using namespace std;
 
+enum DungeonType
+{
+	MOUNTAIN_OF_GOLEM, // 골렘
+	NEST_OF_BALROG,    // 발록
+	CAVE_OF_ZAKUM,     // 자쿰
+	BLACKWIZARD,       // 검은 마법사
+	END,
+	BACK = END
+};
+enum MainSelectType
+{
+	DUNGEON,
+	HOTEL,
+	STORAGE,
+	EXIT
+};
+
 enum JobType
 {
 	NONE,
@@ -12,14 +29,32 @@ enum JobType
 	LOL_GAMER
 };
 
+class Monster
+{
+private:
+	char m_szName[10];
+	int  m_iHP;
+	int  m_iAttack = 0;
+	int  m_iMagicAttack = 0;
+	int  m_iDefence = 0;
+	int  m_iMoney = 0; // 드롭 머니
+
+public:
+	void SetName(const char* pszName)
+	{
+		strcpy_s(m_szName, pszName);
+	}
+};
+
 class Player
 {
 private:
 	char m_szName[10];
 	JobType m_eJob = JobType::NONE;
+	int  m_iHP;
 	int  m_iLevel = 0;
-	int  m_iAttack = 0;
-	int  m_iMagicAttack = 0;
+	int  m_iAttack = 0; //AD
+	int  m_iMagicAttack = 0; // AP
 	int  m_iDefence = 0;
 	int  m_iMoney = 0;
 
@@ -86,6 +121,12 @@ int main()
 	cout << "자네의 이름은 무엇인가?" << endl;
 
 	Player p1;
+	Monster arrayMonster[DungeonType::END] = {};
+	// 몬스터 능력치 미리 세팅
+	
+	arrayMonster[DungeonType::MOUNTAIN_OF_GOLEM].SetName("아주 강한 골렘");
+	arrayMonster[DungeonType::BLACKWIZARD].SetName("약한 검은 마법사");
+
 
 	char szName[10];
 	cin >> szName;
@@ -155,23 +196,92 @@ int main()
 
 		if (selectInput == 1)
 		{
-			// 능력치 세팅
 			break;
 		}
 
 		system("cls");
 	}
-	// 능력치 출력하기
 
 	p1.PrintStatus();
+
+	while (true)
+	{
+		int mainSelect = 0;
+		cout << "1. 던전 2. 여관 3. 상점 4. 게임 종료" << endl;
+		cin >> mainSelect;
+		system("cls");
+
+		switch (mainSelect)
+		{
+		case DUNGEON:
+		{
+			cout << "1. 골렘의 산 2. 발록의 둥지 3. 자쿰의 동굴 4. 검은 마법사 5. 뒤로 가기" << endl;
+			int dungeonSelect = 0;
+			cin >> dungeonSelect;
+			switch (dungeonSelect)
+			{
+			case MOUNTAIN_OF_GOLEM:
+				cout << "====== 골렘의 산 =====" << endl;
+				arrayMonster[mainSelect];
+				p1;
+				// 전투
+
+				break;
+			case NEST_OF_BALROG:
+				cout << "====== 발록의 둥지 =====" << endl;
+
+				// 전투
+
+				break;
+			case CAVE_OF_ZAKUM:
+				cout << "====== 자쿰의 동굴 =====" << endl;
+
+				// 전투
+
+				break;
+			case BLACKWIZARD:
+				cout << "====== 검은 마법사 =====" << endl;
+
+				// 전투
+
+				break;
+			case BACK:
+				break;
+			default:
+				break;
+			}
+		}
+
+			break;
+		case HOTEL:
+			break;
+		case STORAGE:
+			break;
+		case EXIT:
+			break;
+		default:
+			break;
+		}
+	}
+
+	
 
 	return 0;
 }
 
+
+/* 09 / 07 숙제
+1. 몬스터 종류 별로 능력치 세팅해오기
+  - 몬스터 타입 및 능력치와 이름은 마음대로 설정 가능
+
+2. 복습 꼼꼼히 해오기~!!!!! 
+*/
+
+
+
 /*
 숙제 : 복습~!!
 안보고 치기
-
 */
 
 
