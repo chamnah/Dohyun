@@ -4,11 +4,11 @@ using namespace std;
 
 enum DungeonType
 {
-	MOUNTAIN_OF_GOLEM, // 골렘
-	NEST_OF_BALROG,    // 발록
-	CAVE_OF_ZAKUM,     // 자쿰
-	BLACKWIZARD,       // 검은 마법사
-	END,
+	MOUNTAIN_OF_GOLEM, // 골렘 0
+	NEST_OF_BALROG,    // 발록 1
+	CAVE_OF_ZAKUM,     // 자쿰 2
+	BLACKWIZARD,       // 검은 마법사 3
+	END,               // 4
 	BACK = END
 };
 enum MainSelectType
@@ -225,7 +225,7 @@ int main()
 				cout << "====== 골렘의 산 =====" << endl;
 				//몬스터 능력치(0)
 				// 플레이어 능력치(0)
-				arrayMonster[mainSelect];
+				arrayMonster[dungeonSelect];
 				p1;
 				// 전투
 
@@ -272,6 +272,14 @@ int main()
 	return 0;
 }
 
+/*
+10/1 숙제
+
+1. 모든 던전 몬스터 능력치 / 플레이어 능력치 띄우기
+
+2. 앱인벤터 알아오기
+
+*/
 
 /*
 09/28 숙제
