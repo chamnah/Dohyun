@@ -120,11 +120,24 @@ int main()
 	cout << "도현 월드에 온 걸 환영하네." << endl;
 	cout << "자네의 이름은 무엇인가?" << endl;
 
+	int  m_iAttack = 0;
+	int  m_iMagicAttack = 0;
+	int  m_iDefence = 0;
+	int  m_iMoney = 0; // 드롭 머니
+
 	Player p1;
-	Monster arrayMonster[DungeonType::END] = {};
+	Monster arrayMonster[DungeonType::END] = 
+	{ 
+	  {"아주 강한 골렘", 100, 20, 10, 50, 100},
+	  {"마음이 아픈 발록", 200, 40, 20, 100, 200},
+	  {"자...자쿰", 400, 80, 40, 200, 400},
+	  {"어두침침한 법사", 800, 160, 80, 400, 800}
+	};
 	// 몬스터 능력치 미리 세팅
 	
 	arrayMonster[DungeonType::MOUNTAIN_OF_GOLEM].SetName("아주 강한 골렘");
+	arrayMonster[DungeonType::NEST_OF_BALROG].SetName("약한 검은 마법사");
+	arrayMonster[DungeonType::CAVE_OF_ZAKUM].SetName("약한 검은 마법사");
 	arrayMonster[DungeonType::BLACKWIZARD].SetName("약한 검은 마법사");
 
 
@@ -273,15 +286,11 @@ int main()
 }
 
 /*
-10/05 숙제
+10/05 ~ 10/08 숙제
 
-앱인벤터 
+앱 인벤터 
 결과값 텍스트 컴포넌트에 출력하기
 준비 블록 활용해서, 준비 되었다는 내용을 텍스트 컴포넌트에 출력하기
-
-C++
-모든 던전 몬스터 능력치 / 플레이어 능력치 띄우기
-
 */
 
 /*
