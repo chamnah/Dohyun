@@ -64,23 +64,33 @@ int main()
 
 /*
 
-opeator 만들기
+opeator(연산자) 만들기
 
 1. +(더하기),-(빼기),*(곱),/(나누기),%(나머지) 만들기
 2. +=,-=,*=,/=, %= 만들기
 3. ==,!=,<,>,<=,>= 만들기
 
+1 인자가 같은 클래스 인 경우
+2 인자가 bool인 경우
+3 인자가 float인 경우
+
 !
+11/12 숙제~!!!!
+1 인자가 같은 클래스 인 경우
+
 class A
 {
 private:
    int m_iNum;
+   float m_fNum;
+   bool  m_b;
 public:
    A operator+(A other)
    {
-       m_iNum + other.m_iNum;
-	   return *this;
-	   this : 자신의 포인터 
+      A cA;
+      cA.m_iNum = m_iNum + other.m_iNum;
+      cA.m_fNum = m_fNum + other.m_fNum;
+      cA.m_b = m_b + other.m_b;
    }
 
    float operator+(float other) // bool
@@ -88,8 +98,7 @@ public:
        return m_iNum + other;
    }
 }
-1 인자가 같은 클래스 인 경우
-2 인자가 bool인 경우
-3 인자가 float인 경우
+
+
 
 */

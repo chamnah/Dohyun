@@ -225,6 +225,9 @@
     <ClCompile Include="operator2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="operator3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="02-1. library.h">
