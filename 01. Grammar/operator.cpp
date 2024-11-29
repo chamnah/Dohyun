@@ -57,7 +57,7 @@ int main()
 	  int a = 10
 	  int b = 20
 	}
-	A.a + A.b   B.a + B.b 
+	A.a + A.b <  B.a + B.b 
 	ClassB
 	{
 	  int a = -10;
