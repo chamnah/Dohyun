@@ -63,7 +63,7 @@ int main()
 	//A tempA = Func(); // 복사 생성자 호출(함수 인자로 복사할 때)
 	
 	/*
-	복사 생성자 : 동일한 클래스로 만들어진 객체를 복사할 때 사용한다.
+	복사 생성자 : 자신과 동일한 클래스의 객체를 인자로 사용하는 생성자 
 	
 	복사 생성자 호출 규칙
 	1. 클래스 객체 초기화 할 때
@@ -109,6 +109,9 @@ int main()
 
 	A tempB = tempA; // 주소 복사
 	delete tempA.m_pNum; // 할당 해제
+
+	int* ppp = nullptr;
+	ppp = new int[10];
 
 	cout << *tempB.m_pNum << endl;
 	return 0;
