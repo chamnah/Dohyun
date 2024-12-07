@@ -30,6 +30,20 @@ public:
 	}
 };
 
+int main()
+{
+	A tempA;
+	tempA = 10;
+
+	/*A tempB = func2();
+	int a = 20;*/
+	/*A tempA;
+	func(tempA);*/
+
+	return 0;
+}
+
+
 void func(A other) // other °´Ã¼ »ý¼º
 {
 
@@ -42,19 +56,6 @@ A func2()
 
 	return tempA;
 }
-
-int main()
-{
-	A tempB = func2();
-	int a = 20;
-	/*A tempA;
-	func(tempA);*/
-
-	return 0;
-}
-
-
-
 
 
 
