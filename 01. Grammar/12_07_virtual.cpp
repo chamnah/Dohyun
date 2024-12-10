@@ -136,3 +136,54 @@ public    : 클래스 내부 O / 자식 O / 외부 O
 접근지정자 확인 할 거
 
 */
+/*
+부모 클래스
+자식 클래스
+
+접근지정자
+private : 클래스 내부 O 외부 X 자식 클래스 X
+protected : 클래스 내부 O 외부 X 자식 클래스 O
+public : 클래스 내부 O 외부 O 자식 클래스 O
+
+*/
+
+class CParent
+{
+private:
+	int m_privateNum;
+protected:
+	int m_protectedNum;
+public:
+	int m_publicNum;
+
+	void ParentFunc()
+	{
+		m_privateNum = 20; 
+		m_protectedNum = 20; 
+		m_publicNum = 20; 
+	}
+};
+
+class CChild : public CParent
+{
+
+public:
+	void ChildFunc()
+	{
+		m_privateNum = 20;   
+		m_protectedNum = 20; 
+		m_publicNum = 20;    
+	}
+
+};
+
+int main()
+{
+	CChild tempChild;
+	tempChild.m_publicNum = 20;
+
+	// m_privateNum = 20;   X
+	// m_protectedNum = 20; X
+	// m_publicNum = 20;    O
+
+}
