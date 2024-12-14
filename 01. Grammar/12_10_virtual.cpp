@@ -32,6 +32,13 @@ int Func()
 class CParent
 {
 public:
+	bool m_bBool;
+	//char m_szText; // 1
+	//bool m_bBool3;
+	//short m_iNum2; //2byte
+	//int m_iNum;	   // 4
+	//char m_szText2;
+	//bool m_bBool2;
 	virtual void PrintMyClassName()
 	{
 		cout << "CParent 클래스 호출" << endl;
@@ -63,8 +70,22 @@ int main()
 
 int main()
 {
-	CParent* pParent = new CChild;
-	pParent->PrintMyClassName();
+	// 010-1234-5678
+	// 011
+	// 070
+
+	// 32비트 : 포인터 크기가 4byte : 서울특별시 종로구 00동 00번지
+	// 64비트 : 포인터 크기가 8byte : 안드로메다 행성 지구 대한민국 공화국
+
+	/*CParent tempA;
+	tempA.PrintMyClassName();*/
+	/*int* m_pNum;
+	cout << sizeof(m_pNum) << endl;*/
+
+	CParent* pParent = nullptr;
+
+	/*CParent* pParent = new CChild;
+	pParent->PrintMyClassName();*/
 
 	/*
 	부모 포인터 활용 시, 하나의 배열에 보관 가능
@@ -81,12 +102,15 @@ int main()
 	CChild tempChild;
 	tempChild.PrintMyClassName();*/
 
+	//int m_iParent = 0;
+	//int m_iParent[3] = 0;
+
 	return 0;
 }
 
 /*
 숙제
-1. 챔피언 부모 클래스 포인터 배열 크기 3으로 만들기
+1. 챔피언 부모 클래스 포인터 / 배열 크기 3으로 만들기
 2. 배열 인덱스 0,1,2 에 야스오,요네,볼리베어 동적할당
 3. 반복문을 사용하여, 배열 모든 인덱스 순회하여, PrintMyName함수 호출
 */

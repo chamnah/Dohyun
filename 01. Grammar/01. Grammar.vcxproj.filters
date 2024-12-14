@@ -246,6 +246,9 @@
     <ClCompile Include="12_10_virtual.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="12_14_file.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="02-1. library.h">
