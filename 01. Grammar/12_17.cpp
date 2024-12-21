@@ -42,3 +42,30 @@ int num[10];
 C++ 중급 문법 / 고급 문법 - 몰라도 됨
 
 */
+
+/*
+문자열 복습
+1. char szText1[30] = "안녕하세요."
+   char szText2[30] = "반갑습니다."
+   char szResult[30] = "안녕하세요.";
+
+   szText1를 szResult에 복사
+*/
+
+/*
+char szTemp[3] = "안\0";
+한글 2byte  
+영어 1byte
+
+szTemp[0] = 92
+szTemp[1] = 3
+
+for(size_t i = 0; i < 30; i++)
+{
+	szResult[i] = szText1[i];
+	cout << szResult[i];
+}
+
+
+
+*/
