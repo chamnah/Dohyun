@@ -63,9 +63,9 @@ int main()
 	int iNumB = 50;
 	int result = 0;
 	Add 함수로 iNumA와 iNumB 값을 result 변수에 합쳐서 출력 하기;
-
+	result 출력
 	*/
-
+	
 
 	return 0;
 }
