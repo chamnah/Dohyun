@@ -42,6 +42,7 @@ void main()
 	{
 		cout << arrNum[i] << ",";
 	}
+
 }
 
 /*
@@ -51,4 +52,40 @@ void main()
    (오름차순 / 내림차순)
 
 2. 버블 정렬 코드 따라쳐보고 연습해오기
+*/
+
+/*
+int arrNum[numCount] = { 28,  19,  24,  12, 7 };
+28,  19,  24,  12, 7
+19,  28,  24,  12, 7  - arrNum[0] <-> arrNum[1];
+19,  24,  28,  12, 7  - arrNum[1] <-> arrNum[2];
+19,  24,  12,  28, 7  - arrNum[2] <-> arrNum[3];
+19,  24,  12,   7, 28 - arrNum[3] <-> arrNum[4];
+
+//left - 0, 1, 2, 3 : i
+//right - 1, 2, 3, 4 : i + 1
+
+arrNum[0] <-> arrNum[1]
+arrNum[1] <-> arrNum[2]
+arrNum[2] <-> arrNum[3]
+arrNum[3] <-> arrNum[4]
+
+arrNum[i] <-> arrNum[i + 1]
+
+// arrNum[i]
+
+// arrNum <-> arrNum
+arrNum[-1] die
+
+
+1. 왼쪽값이 오른쪽 보다 큰 경우
+2. 값을 서로 바꿨다. Swap
+
+
+
+
+19,  24,  12,  7, 28 1회차
+19,  12,   7, 24, 28
+12,   7,  19, 24, 28
+7,   12,  19, 24, 28
 */
