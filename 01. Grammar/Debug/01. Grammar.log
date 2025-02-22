@@ -1,6 +1,2 @@
-﻿  23. pointer.cpp
-C:\Users\ya960\OneDrive\바탕 화면\class\Dropbox\Dohyun\01. Grammar\23. pointer.cpp(37,7): warning C4101: '_Long' :참조되지 않은 지역 변수입니다.
-C:\Users\ya960\OneDrive\바탕 화면\class\Dropbox\Dohyun\01. Grammar\23. pointer.cpp(34,6): warning C4101: '_Int' :참조되지 않은 지역 변수입니다.
-C:\Users\ya960\OneDrive\바탕 화면\class\Dropbox\Dohyun\01. Grammar\23. pointer.cpp(36,8): warning C4101: '_Short' :참조되지 않은 지역 변수입니다.
-C:\Users\ya960\OneDrive\바탕 화면\class\Dropbox\Dohyun\01. Grammar\23. pointer.cpp(35,7): warning C4101: '_Bool' :참조되지 않은 지역 변수입니다.
-  01. Grammar.vcxproj -> C:\Users\ya960\OneDrive\바탕 화면\class\Dropbox\Dohyun\Debug\01. Grammar.exe
+﻿  12_10_virtual.cpp
+  01. Grammar.vcxproj -> C:\Dohyun\Debug\01. Grammar.exe

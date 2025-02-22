@@ -4,19 +4,24 @@ using namespace std;
 int main()
 {
 	const int numCount = 5;
-	int arrNum[numCount] = { 28,  19,  24,  12, 7 };
-
+	int arrNum[numCount] = { 19,  28,  24,  12, 7 };
+	                       // 12 19 24 28
 	for (size_t i = 0; i < numCount - 1; i++)
 	{
-		//arrNum[i] <-> arrNum[i + 1]
-		int temp = arrNum[i];
-		arrNum[i] = arrNum[i + 1];
-		arrNum[i + 1] = temp;
+		for (size_t j = 0; j < numCount - 1; j++)
+		{
+			if (arrNum[j] > arrNum[j + 1]) // i > i + 1보다 큰 경우(왼쪽 값이 더 큰 경우)
+			{
+				int temp = arrNum[j];
+				arrNum[j] = arrNum[j + 1];
+				arrNum[j + 1] = temp;  // i <-> i + 1 Swap
+			}
+		}
 	}
 
-	for (size_t i = 0; i < numCount; i++)
+	for (size_t i = 0; i < numCount; i++) // 배열 출력
 	{
-		cout << arrNum[i] << ",";
+		cout << arrNum[i] << ","; 
 	}
 
 	//int i = 4;
@@ -44,5 +49,4 @@ int main()
 /*
 숙제
 버블 정렬 안보고 칠 수 있게 연습해오기
-
 */
