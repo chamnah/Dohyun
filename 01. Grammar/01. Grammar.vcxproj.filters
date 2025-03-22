@@ -291,6 +291,9 @@
     <ClCompile Include="03_15_for.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="03_22_insertSort.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="02-1. library.h">
